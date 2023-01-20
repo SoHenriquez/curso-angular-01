@@ -1,0 +1,48 @@
+<style>
+    td{
+        margin-top: 10px;
+    }
+</style>
+
+<dl>
+
+    <h1 style="text-align: center;">Componente Heroes Trabajando!!</h1>
+    <hr>
+    <h2>Portafolio base de {{ nombreUser }}</h2>
+    <h3>:: Contacto :: </h3>
+    <h4>* Télefono: {{ telUser }}</h4>
+    <h4>* Correo: {{ emailUser }}</h4>
+    <p>Cargar archivo</p>
+    <input type="file" name="uploadFile " id="upFile">
+    
+    <br>
+    <br>
+
+    <td>Nombre</td>
+    <dd>{{ nombreUser }}</dd>
+
+    <td>Nombre Capitalizado</td>
+    <dd>{{nombreCapitalizado}}</dd> 
+    
+    <td>:: Funcion ejemplo :: Obtener Nombre</td>
+    <dd>{{obtenerNombre()}}</dd>
+    
+</dl>
+<br><br>
+
+<h1>{{ nombre }}</h1>
+<dl>
+    <td>Nombre</td>
+    <dd>{{ nombre }}</dd>
+
+    <td>Edad</td>
+    <dd>{{ edad }}</dd>
+
+    <button (click)="cambiarNombre()">
+        Cambiar Héroe
+    </button>
+
+    <button (click)="cambiarEdad()"> 
+        Cambiar Edad
+    </button>
+</dl>
